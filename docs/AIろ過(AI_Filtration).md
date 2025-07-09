@@ -4,7 +4,7 @@
 # 例: ビジネスチャット上での会話
 - ❌Aさんが直接メッセージを書き込む
 - ⭕Aさんの書き込みは必ず生成AIを通り、加工されて、その結果が書き込まれる
-    - つまりAさんの書き込み自体は見えず、常に「AIに加工されたメッセージ」だけが残ります<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - つまりAさんの書き込み自体は見えず、常に「AIに加工されたメッセージ」だけが残ります<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # メリット
 # Ans: 本質的なやり取りが増えます、また集中できるようになる
@@ -15,10 +15,10 @@
 # 実装
 - 何らかの[🙏組織単位](🙏組織単位.md)に「AIろ過装置」を導入するイメージ
 - 1 その組織単位上での発言は[* 必ず]ろ過される
-    - たとえばTeamsでもSlackでもいいので、ある4人が集まるチャンネルがあるとして、ここで発言すると必ずろ過されます（されたものが投稿されます）。匿名にするわけではありません<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - たとえばTeamsでもSlackでもいいので、ある4人が集まるチャンネルがあるとして、ここで発言すると必ずろ過されます（されたものが投稿されます）。匿名にするわけではありません<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 - 2 どのようにろ過するかは設定できる
-    - プロンプトを設定して組み込むイメージで合っています<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
-    - AIろ過製品はテストメッセージ込みのテスト機能も拡充させた方がいいでしょう<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - プロンプトを設定して組み込むイメージで合っています<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
+    - AIろ過製品はテストメッセージ込みのテスト機能も拡充させた方がいいでしょう<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # 違い
 - Q: [AIアダプター](AIアダプター.md)との違いは？

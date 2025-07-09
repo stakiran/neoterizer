@@ -3,10 +3,10 @@
 
 # 背景
 - イメージを浮かべられない特性[アファンタジア]が存在する
-- この「イメージを浮かべる能力」に言及したいが、名前がなかったのでつけた<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+- この「イメージを浮かべる能力」に言及したいが、名前がなかったのでつけた<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
     - すでにFantasyの言葉が使われているので、abilityをつけてしまえばいいだろう
 
-# 所感<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+# 所感<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 - 作家含む芸術家の才能の一つは、ファンタジアビリティの高さだと思う
 
 # Q&A

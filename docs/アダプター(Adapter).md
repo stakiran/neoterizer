@@ -5,7 +5,7 @@
 - 本来ならAとBで直接やりとりしてほしいが、Aに問題があって不都合である
     - この場合、A→BではなくA→仲介役→Bとするのが良いだろう
     - この仲介役を（Aの）アダプターという
-        - Aのアダプターは、Bのアダプターではないことに注意<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+        - Aのアダプターは、Bのアダプターではないことに注意<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # 例
 - モンスター社員的なメンバーを管理する上司
@@ -19,6 +19,6 @@
 
 # 実装例
 - [/stao/アダプター理論]
-    - ただしこれは A ← Aのアダプター ← B という形で説明している<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - ただしこれは A ← Aのアダプター ← B という形で説明している<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
     - サムネイルを抜粋:
 <img src="https://gyazo.com/fc1a6b9c3bbce41aba635a9707ed88d3.png" />

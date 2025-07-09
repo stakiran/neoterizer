@@ -3,5 +3,5 @@
 
 <img src="https://gyazo.com/5d85e9e5a7707924990dc26e6f1b4243.png" />
 
-# 研究中...<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+# 研究中...<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 

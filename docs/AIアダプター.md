@@ -32,4 +32,4 @@
     - Ans: はい
     - ITリテラシーと同様、基礎的な素養として鍛えねばならない
     - 大手企業の社員でも全然できない、が珍しくないので困難な道のりではある
-    - しかし[プロンプト・エンジニアリング]（LLMに渡すプロンプトの上手い書き方）がそうであるように、やれば慣れるものだし体系化もできる程度のジャンルではあります。私は[コンテキスト・エンジニアリング(Context Engineering)](コンテキスト・エンジニアリング(Context_Engineering).md)と名付けています<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - しかし[プロンプト・エンジニアリング]（LLMに渡すプロンプトの上手い書き方）がそうであるように、やれば慣れるものだし体系化もできる程度のジャンルではあります。私は[コンテキスト・エンジニアリング(Context Engineering)](コンテキスト・エンジニアリング(Context_Engineering).md)と名付けています<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>

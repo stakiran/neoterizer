@@ -11,5 +11,5 @@
 - Cosense開発元では、この問題を解決するソリューションを開発していた
     - >指示やお願いはslack、議論や相談をscrapbox [/nota-techconf/Day2 質問・雑談コーナー#6048ad7797c2910000d3de02]
     - つまりCosense（旧Scrapbox）上に書いておき、Slackからは「このページ見て」と送る
-- この概念は有用であるため、チャットだけして退散するとみなして、ヒットアンドアウェイをもじった名前をつけることにした<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+- この概念は有用であるため、チャットだけして退散するとみなして、ヒットアンドアウェイをもじった名前をつけることにした<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 

@@ -7,7 +7,7 @@
 - 多様性には構成要素があり、現状典型的なのは、たとえば以下
     - 若手、女性、外国人
 - 構成要素としてニューロも加えられるのでは？
-    - グローバルからもじれると思って、この名前をつけた<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - グローバルからもじれると思って、この名前をつけた<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # ニューロの強みの例
 - [ASD]
@@ -17,7 +17,7 @@
 - [ADHD]
     - 人一倍、働ける
     - 創造性が高い
-    - 資本主義はADHDの時代だと考えている<a href="sta.md"><img src="sta.png" alt="sta" width="16"/></a>
+    - 資本主義はADHDの時代だと考えている<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
         - 裕福な生まれなど階級面を除外すると、成功するかどうかは広く浅いインプットと行動の量であり、ADHDはまさに得意とする
 - [LD]
     - 代わりに別の能力（空間認識や視覚処理）に秀でているかもしれない
