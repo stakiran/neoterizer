@@ -18,6 +18,14 @@ def writable(name):
 # build title→filename map
 pages = data.get("pages", [])
 title2file = {p["title"]: writable(p["title"])+".md" for p in pages}
+
+first_img_url = {}
+for p in pages:
+    for ln in p.get("lines", []):
+        mg = re.match(r'^\[https://gyazo\\.com/([0-9a-fA-F]+)\]$', ln.strip())
+        if mg:
+            first_img_url[p["title"]] = f"https://gyazo.com/{mg.group(1)}.png"
+            break
 # convert lines
 def convert_lines(lines):
     out = []
@@ -106,7 +114,8 @@ def convert_lines(lines):
                 name=m0.group(1)
                 fn = title2file.get(name, name+".md")
                 # placeholder small img
-                return f'<a href="{fn}"><img src="{name}.png" alt="{name}" width="16"/></a>'
+                url = first_img_url.get(name, "")
+                return f'<a href="{fn}"><img src="{url}" alt="{name}" width="16"/></a>'
             line = re.sub(r'\[([^\]]+)\.icon\]', ir, line)
         # heading vs list vs paragraph
         indent = len(line) - len(line.lstrip(" \t　"))
