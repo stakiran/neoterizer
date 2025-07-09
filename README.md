@@ -13,3 +13,5 @@ Cosense の内容を Markdown 化しています
 - image 直後のリストが認識されてない、空行入れて
     - ゴーストページ.md
     - image≒imageだけの行、なので空行入れればいいと思う🐰
+- cosenseプロジェクトへのリンクができてない
+    - ブロックライティング(Block_Writing).md
