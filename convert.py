@@ -1,146 +1,155 @@
 #!/usr/bin/env python3
-import json, os, re
-# --- Preprocess: mask sensitive fields ---
+import json
+import os
+import re
+
+# Paths
 IN  = "neoterizer.json"
 MID = "neoterizer_masked.json"
+
+# --- Preprocess: mask sensitive fields ---
 with open(IN, encoding="utf-8") as f:
     data = json.load(f)
 for u in data.get("users", []):
-    for key in ("id","email"):
+    for key in ("id", "email"):
         if key in u:
-            u[key] = "X"*len(u[key])
+            u[key] = "X" * len(u[key])
 with open(MID, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
+
 # --- Helpers ---
 def writable(name):
+    # Windows forbid: \ / : * ? " < > | and space
     return re.sub(r'[\\/:*?"<>| ]', "_", name)
-# detect illegal filename chars including space
-# build title→filename map
-pages = data.get("pages", [])
-title2file = {p["title"]: writable(p["title"])+".md" for p in pages}
 
+# Build title → filename map
+pages = data.get("pages", [])
+title2file = {
+    p["title"]: writable(p["title"]) + ".md"
+    for p in pages
+}
+
+# Build title → first Gyazo image URL
 first_img_url = {}
 for p in pages:
     for ln in p.get("lines", []):
-        mg = re.match(r'^\[https://gyazo\\.com/([0-9a-fA-F]+)\]$', ln.strip())
-        if mg:
-            first_img_url[p["title"]] = f"https://gyazo.com/{mg.group(1)}.png"
+        m = re.match(r'^\[https://gyazo\.com/([0-9A-Fa-f]+)\]$', ln.strip())
+        if m:
+            first_img_url[p["title"]] = f"https://gyazo.com/{m.group(1)}.png"
             break
-# convert lines
+
 def convert_lines(lines):
     out = []
     i = 0
     n = len(lines)
     while i < n:
         line = lines[i]
-        # skip empty lines => emit blank
-        if not line.strip():
+        text_line = line.strip()
+
+        # Blank line
+        if not text_line:
             out.append("")
             i += 1
             continue
-        # code block?
-        m = re.match(r'^code:(\S+)$', line.strip())
+
+        # Code block
+        m = re.match(r'^code:(\S+)$', text_line)
         if m:
             ext = m.group(1).split(".")[-1]
             out.append(f"```{ext}")
             i += 1
-            # consume indented lines
-            while i<n and (lines[i].startswith(" ") or lines[i].startswith("\t")):
+            while i < n and (lines[i].startswith(" ") or lines[i].startswith("\t")):
                 out.append(lines[i].lstrip())
                 i += 1
             out.append("```")
             continue
-        # table?
+
+        # Table block
         if line.startswith("table:"):
-            name = line[len("table:"):]
             rows = []
             i += 1
-            while i<n and (lines[i].startswith("\t") or lines[i].startswith(" ")):
-                # split by tab
+            while i < n and (lines[i].startswith("\t") or lines[i].startswith(" ")):
                 cells = re.split(r'\t+', lines[i].strip())
                 rows.append(cells)
                 i += 1
-            # make markdown table
             if rows:
-                # header
                 out.append("| " + " | ".join(rows[0]) + " |")
                 out.append("| " + " | ".join("---" for _ in rows[0]) + " |")
                 for r in rows[1:]:
                     out.append("| " + " | ".join(r) + " |")
             continue
-        # inline adjustments: gyazo image
-        gy = re.match(r'^\[https://gyazo\.com/([0-9a-fA-F]+)\]$', line.strip())
+
+        # Gyazo image
+        gy = re.match(r'^\[https://gyazo\.com/([0-9A-Fa-f]+)\]$', text_line)
         if gy:
-            img = f"https://gyazo.com/{gy.group(1)}.png"
-            out.append(f'<img src="{img}" />')
+            url = f"https://gyazo.com/{gy.group(1)}.png"
+            out.append(f'<img src="{url}" />')
             i += 1
             continue
-        # project link [/proj]
-        pr = re.match(r'^\[/([^/\]]+)\]$', line.strip())
+
+        # Project link [/project]
+        pr = re.match(r'^\[/([^/\]]+)\]$', text_line)
         if pr:
             proj = pr.group(1)
             out.append(f'🌎️[{proj}](https://scrapbox.io/{proj})')
             i += 1
             continue
-        # external link [text URL] or [URL text]
-        ex = re.match(r'^\[([^\]]+)\]$', line.strip())
+
+        # External links [text URL] or [URL text]
+        ex = re.match(r'^\[([^\]]+)\]$', text_line)
         if ex:
             parts = ex.group(1).split()
-            if len(parts)==2 and parts[0].startswith("http"):
-                # [URL text]
-                url,text = parts
-                out.append(f'🌎️[{text}]({url})')
-                i+=1; continue
-            if len(parts)==2 and parts[1].startswith("http"):
-                # [text URL]
-                text,url = parts
-                out.append(f'🌎️[{text}]({url})')
-                i+=1; continue
-        # internal link [title]
-        il = re.findall(r'\[([^\]\.]+)\]', line)
-        if il:
-            def repl(m0):
-                t = m0.group(1)
-                if t.endswith(".icon"): return m0.group(0)
-                if t in title2file:
-                    fn=title2file[t]
-                    return f'[{t}]({fn})'
+            if len(parts) == 2 and parts[0].startswith("http"):
+                url, txt = parts
+                out.append(f'🌎️[{txt}]({url})')
+                i += 1
+                continue
+            if len(parts) == 2 and parts[1].startswith("http"):
+                txt, url = parts
+                out.append(f'🌎️[{txt}]({url})')
+                i += 1
+                continue
+
+        # Internal link [title]
+        def repl_int(m0):
+            t = m0.group(1)
+            if t.endswith(".icon"):
                 return m0.group(0)
-            line = re.sub(r'\[([^\]]+)\]', repl, line)
-        # inline icon [xxxx.icon]
-        icon = re.findall(r'\[([^\]]+)\.icon\]', line)
-        if icon:
-            def ir(m0):
-                name=m0.group(1)
-                fn = title2file.get(name, name+".md")
-                # placeholder small img
-                url = first_img_url.get(name, "")
-                return f'<a href="{fn}"><img src="{url}" alt="{name}" width="16"/></a>'
-            line = re.sub(r'\[([^\]]+)\.icon\]', ir, line)
-        # heading vs list vs paragraph
+            if t in title2file:
+                return f'[{t}]({title2file[t]})'
+            return m0.group(0)
+        line = re.sub(r'\[([^\]\.]+)\]', repl_int, line)
+
+        # Icon [xxxx.icon]
+        def repl_icon(m0):
+            name = m0.group(1)
+            href = title2file.get(name, name + ".md")
+            src = first_img_url.get(name, "")
+            return f'<a href="{href}"><img src="{src}" alt="{name}" width="16"/></a>'
+        line = re.sub(r'\[([^\]]+)\.icon\]', repl_icon, line)
+
+        # Heading or List
         indent = len(line) - len(line.lstrip(" \t　"))
-        text = line.strip()
-        if indent==0:
-            out.append(f"# {text}")
+        txt = line.strip()
+        if indent == 0:
+            out.append(f"# {txt}")
         else:
-            # indent>0 => list
             if indent == 1:
                 spaces = ""
             else:
-                spaces = " " * ((indent-1)*4)
-            out.append(f"{spaces}- {text}")
+                spaces = " " * ((indent - 1) * 4)
+            out.append(f"{spaces}- {txt}")
         i += 1
+
     return out
 
-# write docs
+# Write each page to docs/
 odir = "docs"
 os.makedirs(odir, exist_ok=True)
 for p in pages:
-    title = p["title"]
-    fn = title2file[title]
-    md = []
-    md.extend(convert_lines(p.get("lines", [])))
-    path = os.path.join(odir, fn)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("\n".join(md))
+    fname = title2file[p["title"]]
+    content = convert_lines(p.get("lines", []))
+    with open(os.path.join(odir, fname), "w", encoding="utf-8") as f:
+        f.write("\n".join(content))
+
 print("Generated docs/ with Markdown files.")
