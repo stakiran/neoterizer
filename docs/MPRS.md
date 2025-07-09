@@ -2,22 +2,22 @@
 # 主な[🙏仕事術](🙏仕事術.md)（の種類）を挙げたもの。
 # 読み方は「マピルス」。
 
- - M
+- M
     - メソッド(Method)
     - モデル(Model)
     - マインド(Mind)
     - マトリクス(Matrix)
- - P
+- P
     - プロセス(Process)
     - プラクティス(Practice)
     - プリンシプル(Principle)
     - パターン(Pattern)
- - R
+- R
     - ルール(Rule)
     - ロール(Role)
     - ランク(Rank)
     - レート(Rate)
- - S
+- S
     - ストラクチャー(Structure)
     - ストラテジー(Strategy)
     - スタンダード(Standard)

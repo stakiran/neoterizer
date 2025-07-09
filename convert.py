@@ -115,7 +115,10 @@ def convert_lines(lines):
             out.append(f"# {text}")
         else:
             # indent>0 => list
-            spaces = " " * ((indent-1)*4 if indent>1 else 1)
+            if indent == 1:
+                spaces = ""
+            else:
+                spaces = " " * ((indent-1)*4)
             out.append(f"{spaces}- {text}")
         i += 1
     return out
