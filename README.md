@@ -15,3 +15,5 @@ Cosense の内容を Markdown 化しています
     - image≒imageだけの行、なので空行入れればいいと思う🐰
 - cosenseプロジェクトへのリンクができてない
     - ブロックライティング(Block_Writing).md
+- 引用が変換できないね、大見出しの上に引用って無理だし
+    - IDMN原則.md
