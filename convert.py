@@ -79,10 +79,12 @@ def convert_lines(lines):
                 rows.append(cells)
                 i += 1
             if rows:
+                out.append("") # 表として認識させるために前後に空行をはさむ
                 out.append("| " + " | ".join(rows[0]) + " |")
                 out.append("| " + " | ".join("---" for _ in rows[0]) + " |")
                 for r in rows[1:]:
                     out.append("| " + " | ".join(r) + " |")
+                out.append("")
             continue
 
         # Gyazo image
