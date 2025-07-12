@@ -97,11 +97,21 @@ def convert_lines(lines):
             i += 1
             continue
 
-        # Project link [/project]
-        pr = re.match(r'^\[/([^/\]]+)\]$', text_line)
+        # Project link [/project] or [/project/page]
+        pr = re.match(r'^\[/([^\]]+)\]$', text_line)
         if pr:
-            proj = pr.group(1)
-            out.append(f'🌎️[{proj}](https://scrapbox.io/{proj})')
+            path = pr.group(1)
+            parts = path.split('/', 1)
+            proj = parts[0]
+            if len(parts) > 1:
+                page = parts[1]
+                # スペース含まれてるとMarkdownとして破綻するね
+                # 実装甘い可能性ある（他のパターンが漏れてる気がする🐰
+                page = page.replace(' ', '_') 
+                url = f"https://scrapbox.io/{proj}/{page}"
+            else:
+                url = f"https://scrapbox.io/{proj}"
+            out.append(f'🌎️[{path}]({url})')
             i += 1
             continue
 

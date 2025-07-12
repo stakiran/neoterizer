@@ -21,7 +21,7 @@
 # 例
 - [従業員体験]
     - これはEmployees As Customersと言い換えても良いだろう。ただし多様性に乏しいか、コスト面を気にしすぎる場合はEmployees As Customersの視座に留まる<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
-- [/nishio/社員は仲間ではなくお客様]
+🌎️[nishio/社員は仲間ではなくお客様](https://scrapbox.io/nishio/社員は仲間ではなくお客様)
 - [Platform Engineering]
     - 社内開発者向けの基盤を整える取り組みであり、社内開発者を顧客とたとえることがある
 - [BtoA](BtoA.md)

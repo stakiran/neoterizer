@@ -13,4 +13,4 @@
     - 例では下がサイクル1で、上がサイクル2。サイクル2はサイクル1のサマリーを踏まえている
 
 # 参考:
-- [/stao/Block Writing(ブロックライティング)]
+🌎️[stao/Block Writing(ブロックライティング)](https://scrapbox.io/stao/Block_Writing(ブロックライティング))
