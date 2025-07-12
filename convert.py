@@ -65,11 +65,17 @@ def convert_lines(lines):
             continue
 
         # Table block
-        if line.startswith("table:"):
-            rows = []
+        m_tab = re.match(r'^([ \t　]*)(table:\S+)', line)
+        if m_tab:
+            base_indent = len(m_tab.group(1))
             i += 1
-            while i < n and (lines[i].startswith("\t") or lines[i].startswith(" ")):
-                cells = re.split(r'\t+', lines[i].strip())
+            rows = []
+            while i < n:
+                next_line = lines[i]
+                indent_i = len(next_line) - len(next_line.lstrip(" \t　"))
+                if indent_i <= base_indent:
+                    break
+                cells = re.split(r'\t+', next_line.strip())
                 rows.append(cells)
                 i += 1
             if rows:
