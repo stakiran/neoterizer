@@ -11,4 +11,4 @@
     - これらはコミュニケーションツールであって[コラボレーション]ツールではないが、実態として2025年現在でもまだまだコラボレーションツールとしても使われているため無視できず、加えた
 
 # 参考
-- [文字通りの IT リテラシー(2/2)｜Remotism https://zenn.dev/sta/books/remotism-book/viewer/literal_it_literacy2#qwincs]
+🌎️[文字通りの IT リテラシー(2/2)｜Remotism](https://zenn.dev/sta/books/remotism-book/viewer/literal_it_literacy2#qwincs)

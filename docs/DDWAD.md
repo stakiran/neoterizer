@@ -27,5 +27,5 @@
     - そのためのPFMの初心者でも気軽にマイペースに導入することができます<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # 参考
-- [ファイル・フォルダの整理に悩んでいるなら ddwad(ドドワッド) 整理術がオススメ - ガラパゴスタ https://stressfree-fulfilling-solo.hatenablog.com/entry/2018/11/19/072200]
+🌎️[ファイル・フォルダの整理に悩んでいるなら ddwad(ドドワッド) 整理術がオススメ - ガラパゴスタ](https://stressfree-fulfilling-solo.hatenablog.com/entry/2018/11/19/072200)
 

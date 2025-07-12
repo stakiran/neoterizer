@@ -13,5 +13,5 @@
     - 荷物（資料様式）を軽くための、おそらく現状最もか実効性の高い手段である: [「資料様式は荷物」原則](「資料様式は荷物」原則.md)
 
 # 参考
-- [「ページズム」 文書よりもページ｜仕事術2.0 https://note.com/workhack20/n/ned9bca665a1c]
-- [「ページズム」 文書よりもページ - 仕事術2.0 Article Network https://wh20articlenetwork.vercel.app/%E3%80%8C%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%BA%E3%83%A0%E3%80%8D_%E6%96%87%E6%9B%B8%E3%82%88%E3%82%8A%E3%82%82%E3%83%9A%E3%83%BC%E3%82%B8.html]
+🌎️[「ページズム」 文書よりもページ｜仕事術2.0](https://note.com/workhack20/n/ned9bca665a1c)
+🌎️[「ページズム」 文書よりもページ - 仕事術2.0 Article Network](https://wh20articlenetwork.vercel.app/%E3%80%8C%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%BA%E3%83%A0%E3%80%8D_%E6%96%87%E6%9B%B8%E3%82%88%E3%82%8A%E3%82%82%E3%83%9A%E3%83%BC%E3%82%B8.html)

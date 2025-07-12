@@ -29,4 +29,4 @@
     - 我慢できない人だけがオープンにする
 
 # 参考:
-- [「Reject and Open」 拒否するなら事情を公開せよ｜仕事術2.0 https://note.com/workhack20/n/n2a712b16c996]
+🌎️[「Reject and Open」 拒否するなら事情を公開せよ｜仕事術2.0](https://note.com/workhack20/n/n2a712b16c996)

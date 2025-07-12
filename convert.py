@@ -101,13 +101,16 @@ def convert_lines(lines):
         ex = re.match(r'^\[([^\]]+)\]$', text_line)
         if ex:
             parts = ex.group(1).split()
-            if len(parts) == 2 and parts[0].startswith("http"):
-                url, txt = parts
-                out.append(f'🌎️[{txt}]({url})')
-                i += 1
-                continue
-            if len(parts) == 2 and parts[1].startswith("http"):
-                txt, url = parts
+            url = None
+            # URL at start
+            if parts and (parts[0].startswith("http://") or parts[0].startswith("https://")):
+                url = parts[0]
+                txt = " ".join(parts[1:])
+            # URL at end
+            elif parts and (parts[-1].startswith("http://") or parts[-1].startswith("https://")):
+                url = parts[-1]
+                txt = " ".join(parts[:-1])
+            if url:
                 out.append(f'🌎️[{txt}]({url})')
                 i += 1
                 continue

@@ -27,4 +27,4 @@
         - あるいはAIに委譲したタスクを、リアクティブワークに変換して処理できるようにするのはアリでしょうし、おそらくこちらが開拓されていく気もします<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # 参考:
-- [AISI - AI で SI を変革する https://zenn.dev/sta/articles/2025-06-12-aisi#%E3%83%87%E3%83%AA%E3%83%95%E3%82%A1%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3]
+🌎️[AISI - AI で SI を変革する](https://zenn.dev/sta/articles/2025-06-12-aisi#%E3%83%87%E3%83%AA%E3%83%95%E3%82%A1%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3)
