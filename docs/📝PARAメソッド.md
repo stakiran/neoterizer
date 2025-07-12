@@ -2,6 +2,7 @@
 # [PKM(Personal Knowledge Management)]の一種で、Project, Area of responsibility, Resource, Archiveの4つを使ったもの。
 
 <img src="https://gyazo.com/5080b05b56aa190ed9533d9d6e87064f.png" />
+
 - 参考: [The PARA Method: The Simple System for Organizing Your Digital Life in Seconds https://fortelabs.com/blog/para/]
 
 # 所感<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
@@ -11,6 +12,7 @@
 - ゴールの概念がある
     - 達成したい事柄で、プロジェクトに紐づける
 <img src="https://gyazo.com/32ff3cbe229c5adae04eda78aae7c5d0.png" />
+
 - 哲学も包含されている
     - 「プロジェクトなきゴールは夢でしかない」「ゴールなきプロジェクトは趣味でしかない」
     - 無理に[SSoT(信頼できる唯一の情報源)]にせず、複数のツールを使ってもいいが、必ずPARAの構造を徹底する

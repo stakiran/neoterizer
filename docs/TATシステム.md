@@ -4,7 +4,9 @@
 
 # サムネイル:
 <img src="https://gyazo.com/8451bd3de708b7d607ca558afb3734b6.png" />
+
 <img src="https://gyazo.com/2cbbc0789a58c0b674d3826a99b96850.png" />
+
 
 # 背景
 - [拘束的非同期](拘束的非同期.md)を使うのは難しい、その理由は以下のとおり:

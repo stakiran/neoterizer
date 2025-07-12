@@ -20,5 +20,6 @@
     - つまり、ここでは（GTDを噛み砕くでは）GTDを箱――もっと言えば項目からなるリストの集まりとその運用ととらえています<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 # 図で示すと:
 <img src="https://gyazo.com/d8dbd3eed8032b9ef2279004da9b4858.png" />
+
     - [https://gyazo.com/66ea2c2b32ac450486a611ed03f4c4b9]凡例
 

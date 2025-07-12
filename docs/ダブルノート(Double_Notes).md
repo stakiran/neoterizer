@@ -3,6 +3,7 @@
 
 # サムネイル:
 <img src="https://gyazo.com/4b5c3db8961c3dcf5553dc8425e76559.png" />
+
 # これは[/modularnotions/ダブルノート]の文脈で使った図です
 
 # 背景

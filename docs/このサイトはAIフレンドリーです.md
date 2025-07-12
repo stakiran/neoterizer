@@ -17,5 +17,7 @@
 # PCの場合ですが、
 - Ctrl + Aなどで全選択からのコピーでいけます
 <img src="https://gyazo.com/07f19a5f925eb6269809b3f472f76546.png" />
+
 - あるいはCosenseのExport for AI機能を使って、エクスポートもできます
 <img src="https://gyazo.com/494accee5b12a3f9dcc0b9c5522b0ef8.png" />
+

@@ -5,6 +5,7 @@
 # 例
 - タスク = 予定、ツールとしてOutlookを使う場合
 <img src="https://gyazo.com/fd74b3cf45765ffa9ecf282b3269985c.png" />
+
     - 2:39～ [【タスク管理術４選】今日から実践できる！おすすめの仕事時短術とは？ - YouTube https://www.youtube.com/watch?v=hY-nGxLw8zc]
 
 # 開発秘話

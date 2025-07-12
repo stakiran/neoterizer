@@ -23,6 +23,7 @@
     - たとえば上記のように、箇条書きの中で空行を表現できる
 <img src="https://gyazo.com/a23720a97bb33cc93233ff741b695cb6.png" />
 
+
 # 自動空行(Auto Bline)
 - 自動で空行を空ける
 - 例: [/shokai/空行承り太郎]、Cosenseにおける行末の空行自動挿入
@@ -39,9 +40,11 @@
 - これをEOF Blineという
 - 例: [メモ帳]による例
 <img src="https://gyazo.com/b12990d17fb6f3568e1d6a10cbce928b.png" />
+
     - 何も書かないと終端がわからないので、EOFという文字を書いて示している
 - 例: [秀丸エディタ]による例
 <img src="https://gyazo.com/03b1be3794a7d86855c732126e4c55ed.png" />
+
     - エディタの機能として表示できる場合もある
 
 # 塊モデル

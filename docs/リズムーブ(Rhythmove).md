@@ -13,10 +13,12 @@
         - リズムに乗って動くことさえ合っていれば、あなたも親しめる可能性がある
 
 <img src="https://gyazo.com/2fd427da9f0212d7c0c63d9092074a7d.png" />
+
 # これは[画像蓋](画像蓋.md)
 
 # 例
 <img src="https://gyazo.com/77eae280cf49f19cf34c1f918cbb6bc6.png" />
+
         - ※BPMは190
     - 以下が混ざっている
         - PIUやDDRのような踏みゲーの踏む動きや移動する動き

@@ -84,6 +84,8 @@ def convert_lines(lines):
         if gy:
             url = f"https://gyazo.com/{gy.group(1)}.png"
             out.append(f'<img src="{url}" />')
+            # 空行をはさまないと次行以降のmarkdownが認識されないので、はさむ
+            out.append(f'')
             i += 1
             continue
 
