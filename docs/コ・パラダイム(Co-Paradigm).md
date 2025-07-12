@@ -16,4 +16,4 @@
     - 対等な立場で協力すること
     - なので階層組織における命令などはコミュニケーションではない<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
         - つまり指揮命令系統から脱せてない組織は、（協働という意味では）コミュニケーションすらできていない
-
+        - 便宜上、[コマンド（コミュニケーション）](コマンド（コミュニケーション）.md)と呼びましょう<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
