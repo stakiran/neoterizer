@@ -1,7 +1,7 @@
 {
   "name": "neoterizer",
   "displayName": "知的生産に魅せられし者",
-  "exported": 1752292127,
+  "exported": 1752294370,
   "users": [
     {
       "id": "XXXXXXXXXXXXXXXXXXXXXXXX",
@@ -37,7 +37,7 @@
       "created": 1750325760,
       "updated": 1751698864,
       "id": "6853d9feddf2476218ffaa01",
-      "views": 109,
+      "views": 110,
       "lines": [
         "このサイトについて",
         "私の[知的生産]物を置いています。",
@@ -252,15 +252,15 @@
     {
       "title": "このサイトの読み方",
       "created": 1750329907,
-      "updated": 1752122936,
+      "updated": 1752294367,
       "id": "6853ea31f51077af7544b4e9",
-      "views": 52,
+      "views": 53,
       "lines": [
         "このサイトの読み方",
         "ページ名",
         "\t「無印」と絵文字付きを使います",
         "\t\ttable:t",
-        "\t\t\t\t\t例",
+        "\t\t\t(表記)\t(解説)\t(例)",
         "\t\t\t無印\t私がつくったもの\t[知的生産]",
         "\t\t\t\t運用系のページ\t[このサイトについて], [settings]",
         "\t\t\t\t既存の言葉\t[Cosense]",
@@ -676,7 +676,7 @@
       "created": 1750413812,
       "updated": 1750463328,
       "id": "685531f15a62786c06cd579b",
-      "views": 9,
+      "views": 10,
       "lines": [
         "軽量バーチャルオフィス",
         "Light-weight virtual office.",
@@ -1035,7 +1035,7 @@
       "created": 1750463369,
       "updated": 1750476647,
       "id": "6855f3874c7b70e87551204a",
-      "views": 7,
+      "views": 8,
       "lines": [
         "プレゼンシング(Presencing)",
         "[プレゼンス]情報を運用すること、また重視するというあり方。",
