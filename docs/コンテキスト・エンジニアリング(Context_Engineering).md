@@ -2,7 +2,7 @@
 # AIまたは人間に読んでもらうために、自分の文脈（コンテキスト）を言語化して共有すること。
 # 特にこれに関するやり方、考え方、あり方などを体系化したもの。
 
-# 整備中<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
+# [整備中]<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 
 # 構成要素
 - 言語化スキル
