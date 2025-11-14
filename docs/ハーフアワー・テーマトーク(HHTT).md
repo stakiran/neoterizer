@@ -5,7 +5,7 @@
 # 概要
 - ハーフアワーつまりは30分でテーマトークを行う
     - 定期的に行う。週に一度、または月に一度
-        - 1on1みたいに定期的にやる、かつ全社員に義務化するようなイメージです<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
+        - [1on1]みたいに定期的にやる、かつ全社員に義務化するようなイメージです<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
     - ひとりのマネージャーが統括する単位のチームやグループで行う（これを便宜上[* ユニット]）
         - おそらく2～10人くらいになるはずです。目安として30分の対話で全員が喋れるくらいの人数が良いです。できれば4人以下<a href="sta.md"><img src="https://gyazo.com/a0a22d2fc5cf4fb2525db091fb66594b.png" alt="sta" width="16"/></a>
 - テーマトークのネタ（テーマ）と進め方は、TTPOが整備する
