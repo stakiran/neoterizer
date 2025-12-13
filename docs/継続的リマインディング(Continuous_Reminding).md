@@ -16,4 +16,14 @@
         - すぐに対応するものと一向に対応されないものなど「傾向」が反映されていくため。当然ながら、この傾向は自身のキャパシティの範囲内で反映される
         - [リアクティブワーク(Reactive Work)](リアクティブワーク(Reactive_Work).md)として処理できるようになり、タスク管理から解放されるため。来たリマインドに応えていくだけで良い
 
+# プロトタイプ: [Continuous Reminding Prototype https://stakiran.github.io/continuous_reminding/]
+# （動作を早く見るために秒単位を使っている）
+- Reminder Input からリマインダーをセット
+    - セットされたのは Scheduled Reminders に入る
+- 指定タイミングが来たらリマインドされる
+    - Expired Reminders に表示される
+    - ここからがコリマインドのミソで、選択肢から先送りを選べる
+<img src="https://gyazo.com/69b4441421d694ae258b9a342d9bda50.png" />
+
+
 # log [za_yioYE8](za_yioYE8.md)
