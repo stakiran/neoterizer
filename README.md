@@ -3,7 +3,10 @@
 ## ここは何？
 Cosense の内容を Markdown 化しています
 
-## 👉[入口](docs/index.md)
+## 入口
+- [🐙 GitHub](docs/index.md)
+- [🌐 Website](https://stakiran.github.io/neoterizer/)
+- [📝 Cosense](https://scrapbox.io/neoterizer/)
 
 # ====
 
